@@ -7,25 +7,35 @@ body{
     height: 100vh;
 }
 .cabecalho{
+    width: 100%;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    z-index: 10000;
+    top: 0;
+    position: fixed;
+    background-color: white;
+}
+.cabecalho__conteudo{
     display: flex;
     width: 60%;
     margin: auto;
     justify-content: space-between;
 }
-.botoes{
+.cabecalho__botoes{
     display: flex;
+    align-items: center;
     gap: 20px;
     position: relative;
 }
-.botoes button{
+.cabecalho__botoes button{
     padding: 5px;
     background-color: transparent;
+    height: 30px;
     cursor: pointer;
     border: none;
     font-family: "Rubik", sans-serif;
     position: relative;
 }
-.botoes button::after{
+.cabecalho__botoes button::after{
     content: " ";
     width: 0%;
     height: 3px;
@@ -35,10 +45,10 @@ body{
     left: 0;
     transition: 0.5s ease-in-out;
 }
-.botoes button:hover::after{
+.cabecalho__botoes button:hover::after{
     width: 100%;
 }
-.logo img{
+.cabecalho__logo img{
     width: 130px;
     padding: 15px;
     filter: drop-shadow( 1px 3px 5px rgba(0, 0, 0, 0.193));
@@ -63,9 +73,8 @@ body{
     width: 900px;
     font-size: 20px;
 }
-
 section.slider{
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
     width: 100%;
     height: 600px;
     padding: 0;
@@ -178,14 +187,20 @@ section.slider{
     font-size: 17px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.206);
 }
+.conteudo__esquerda hr{
+    width: 300px;
+    border-color: black;
+}
+.conteudo__direita hr{
+    width: 200px;
+    border-color: black;
+}
 
 .conteudo__h3{
     text-transform: uppercase;
-    background-color:#03A9F4;
-    box-shadow: 2px 2px 10px #03A9F4;
-    font-family: "Rubik", sans-serif;
-    color: white;
-    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
     font-size: 25px;
     height: fit-content;
     border-radius: 3px;
@@ -236,7 +251,7 @@ section.slider{
     background-color: rgb(255, 255, 255);
     width: fit-content;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.389);
     padding: 20px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.248);
@@ -274,7 +289,7 @@ section.slider{
     font-weight: 500;
     font-size: 15px;
     position: relative;
-    bottom: -17%;
+    bottom: -0%;
     left: 50%;
     transform: translate( -50%);
 }
