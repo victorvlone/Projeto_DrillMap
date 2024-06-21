@@ -12,125 +12,133 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header class="cabecalho">
-        <div class="cabecalho__conteudo">
-            <div class="cabecalho__logo">
-                <a href="index.html"><img src="images/DrillMapLogoBG.png"></a>
+    <div class="container__geral">
+        <header class="cabecalho">
+            <div class="cabecalho__conteudo">
+                <div class="cabecalho__logo">
+                    <a href="index.html"><img src="images/DrillMapLogoBG.png"></a>
+                </div>
+
+                <div class="cabecalho__botoes">
+                    <button>MAPA</button>
+                    <button>Login</button>
+                    <button>Cadastre-se</button>
+                </div>
+
+                <div class="cabecalho__icones">
+                    <img src="images/map-icon.png" alt="">
+                    <img src="images/login-icon.png" alt="">
+                </div>
             </div>
+        </header>
 
-            <div class="cabecalho__botoes">
-                <button>AJUDA</button>
-                <button>POÇOS</button>
-                <button>MAPA</button>
-                <button>Login</button>
-                <button>Cadastre-se</button>
-            </div>
-        </div>
-    </header>
-
-    <section class="slider">
-        <div class="descricao">
-            <h1>Bem-vindo ao DrillMap</h1>
-            <p>
-                Explore mapas interativos de bacias sedimentares, poços, campos e blocos exploratórios com o DrillMap. Utilize nossos filtros intuitivos para visualizar áreas específicas e obter informações detalhadas sobre cada local. Navegue facilmente entre diferentes camadas geográficas e descubra os recursos energéticos com precisão
-            </p>
-        </div>
-        <div class="slider-content">
-
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
-
-            <div class="slide-box primeiro">
-                <img class="img-desktop" src="images/carrosel1.jpg" alt="slide 1">
-            </div>
-            <div class="slide-box">
-                <img class="img-desktop" src="images/carrosel2.jpg" alt="slide 2">
-            </div>
-            <div class="slide-box">
-                <img class="img-desktop" src="images/carrossel3.jpg" alt="slide 3">
-            </div>
-
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-
-
-        </div>
-    </section>
-
-    <div class="container">
-        <div class="container__conteudo">
-            <img class="conteudo__img" src="images/imagem1.jpg">
-
-            <div class="conteudo__direita">
-                <h3 class="conteudo__h3">Utilização do Mapa</h3>
-                <hr>
-                <p class="conteudo__p"> 
-                    Explore nosso mapa interativo para visualizar e buscar dados de poços e bacias petrolíferas sem a necessidade de cadastro. Navegue facilmente pelas informações de localização e detalhes dos poços diretamente no mapa, utilizando filtros para refinar sua busca. Esta funcionalidade permite uma experiência de uso imediata e sem barreiras, facilitando o acesso a dados importantes.
+        <section class="slider">
+            <div class="descricao">
+                <h1>Bem-vindo ao DrillMap</h1>
+                <p>
+                    Explore mapas interativos de bacias sedimentares, poços, campos e blocos exploratórios com o DrillMap. Utilize nossos filtros intuitivos para visualizar áreas específicas e obter informações detalhadas sobre cada local. Navegue facilmente entre diferentes camadas geográficas e descubra os recursos energéticos com precisão
                 </p>
+
+                <div class="div__button">     
+                    <button class="buttom__inscricao">INSCREVA-SE</button>
+                </div> 
+            </div>
+            <div class="slider-content">
+                
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="images/carrosel1.jpg" alt="slide 1">
+                    <img class="img-mobile" src="images/mobile1.jpg" alt="slide 1">
+                </div>
+                <div class="slide-box">
+                    <img class="img-desktop" src="images/carrosel2.jpg" alt="slide 2">
+                    <img class="img-mobile" src="images/mobile2.jpg" alt="slide 2">
+                </div>
+                <div class="slide-box">
+                    <img class="img-desktop" src="images/carrossel3.jpg" alt="slide 3">
+                    <img class="img-mobile" src="images/mobile3.jpg" alt="slide 3">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="container__conteudo">
+                <img class="conteudo__img" src="images/imagem1.jpg">
+
+                <div class="conteudo__direita">
+                    <h3 class="conteudo__h3">Utilização do Mapa</h3>
+                    <hr>
+                    <p class="conteudo__p"> 
+                        Explore nosso mapa interativo para visualizar e buscar dados de poços e bacias petrolíferas sem a necessidade de cadastro. Navegue facilmente pelas informações de localização e detalhes dos poços diretamente no mapa, utilizando filtros para refinar sua busca. Esta funcionalidade permite uma experiência de uso imediata e sem barreiras, facilitando o acesso a dados importantes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container__conteudo">
+                <div class="conteudo__esquerda">
+                    <h3 class="conteudo__h3">Dados Sempre Atualizados</h3>
+                    <hr>
+                    <p class="conteudo__p"> 
+                        Na nossa plataforma, garantimos que você tenha acesso às informações mais recentes sobre poços e bacias petrolíferas. Nossos dados são constantemente atualizados para fornecer a você uma visão precisa e atual do cenário de exploração e produção. Explore o mapa interativo e confie na precisão das informações para tomar decisões informadas e acompanhar as últimas novidades no setor. Mantenha-se atualizado com as mudanças mais recentes e explore dados confiáveis a qualquer momento.
+                    </p>
+                </div>
+
+                <img class="conteudo__img" src="images/imagem2.jpg">
             </div>
         </div>
+        
+        <div class="container__funcoes">
+            <div class="mensagem">
+                <h4 class="mensagem__titulo">Faça parte da nossa comunidade e mantenha-se sempre informado</h4>
+                <p class="mensagem__paragrafo">Nossa plataforma garante que você esteja sempre um passo à frente, com acesso a ferramentas avançadas e um suporte contínuo. Não perca a oportunidade de fazer parte de uma rede que valoriza o conhecimento e a atualização constante. </p>
+            </div>  
 
-        <div class="container__conteudo">
-            <div class="conteudo__esquerda">
-                <h3 class="conteudo__h3">Dados Sempre Atualizados</h3>
-                <hr>
-                <p class="conteudo__p"> 
-                    Na nossa plataforma, garantimos que você tenha acesso às informações mais recentes sobre poços e bacias petrolíferas. Nossos dados são constantemente atualizados para fornecer a você uma visão precisa e atual do cenário de exploração e produção. Explore o mapa interativo e confie na precisão das informações para tomar decisões informadas e acompanhar as últimas novidades no setor. Mantenha-se atualizado com as mudanças mais recentes e explore dados confiáveis a qualquer momento.
-                </p>
+        
+            <img class="background" src="images/carrosel4.jpg" alt="">
+            <img class="background-mobile" src="images/mobile4.jpg" alt="">
+            
+
+            <div class="funcoes">
+                <div class="funcoes__funcao">
+                    <div class="funcao__img">
+                        <img src="images/favorite-icon.png" alt="">
+                    </div>
+                    <h3>FAVORITO</h3>
+                    <p>Após realizar o cadastro, você pode favoritar os poços de interesse. Esta funcionalidade permite que você acompanhe de perto as atualizações e mantenha um registro dos poços que são mais relevantes para você.</p>
+                </div>
+                <div class="funcoes__funcao">
+                    <div class="funcao__img">
+                        <img src="images/notification-icon (1).png" alt="">
+                    </div>
+                    <h3>NOTIFICAÇÃO</h3>
+                    <p>Receba notificações automáticas sempre que um poço que você favoritou for atualizado. Mantenha-se informado sobre as últimas mudanças e atualizações importantes relacionadas aos seus poços de interesse. </p>
+                    
+                </div>
+                <div class="funcoes__funcao">
+                    <div class="funcao__img">
+                        <img src="images/text-icon.png" alt="">
+                    </div>
+                    <h3>DETALHES</h3>
+                    <p>Você tem acesso a uma plataforma que permite explorar informações detalhadas sobre cada poço. Isso inclui dados técnicos e estatísticas relevantes que podem ajudar na análise e comparação de diferentes poços.</p>
+                </div>
             </div>
-
-            <img class="conteudo__img" src="images/imagem2.jpg">
         </div>
     </div>
-    
-   
-        <div class="mensagem">
-            <h4 class="mensagem__titulo">Faça parte da nossa comunidade e mantenha-se sempre informado</h4>
-            <p class="mensagem__paragrafo">Nossa plataforma garante que você esteja sempre um passo à frente, com acesso a ferramentas avançadas e um suporte contínuo. Não perca a oportunidade de fazer parte de uma rede que valoriza o conhecimento e a atualização constante. </p>
-        </div>  
-
-    
-        <img class="background" src="images/carrosel4.jpg" alt="">
-        
-        <button class="buttom__inscricao">INSCREVA-SE</button>
-
-        <div class="funcoes">
-            <div class="funcoes__funcao">
-                <div class="funcao__img">
-                    <img src="images/favorite-icon.png" alt="">
-                </div>
-                <h3>FAVORITO</h3>
-                <p>Após realizar o cadastro, você pode favoritar os poços de interesse. Esta funcionalidade permite que você acompanhe de perto as atualizações e mantenha um registro dos poços que são mais relevantes para você.</p>
-            </div>
-            <div class="funcoes__funcao">
-                <div class="funcao__img">
-                    <img src="images/notification-icon (1).png" alt="">
-                </div>
-                <h3>NOTIFICAÇÃO</h3>
-                <p>Receba notificações automáticas sempre que um poço que você favoritou for atualizado. Mantenha-se informado sobre as últimas mudanças e atualizações importantes relacionadas aos seus poços de interesse. </p>
-                
-            </div>
-            <div class="funcoes__funcao">
-                <div class="funcao__img">
-                    <img src="images/text-icon.png" alt="">
-                </div>
-                <h3>DETALHES</h3>
-                <p>Você tem acesso a uma plataforma que permite explorar informações detalhadas sobre cada poço. Isso inclui dados técnicos e estatísticas relevantes que podem ajudar na análise e comparação de diferentes poços.</p>
-            </div>
-        </div>
-        
-
     <script src="js/script.js"></script>
 
 </body>
