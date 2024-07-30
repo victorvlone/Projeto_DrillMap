@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+.containerHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerHeader.scrolled {
+    background-color: white;
+    border-bottom: 2px solid black;
+    transition: background-color 0.3s;
+}
+.header__logo{
+    width: 10rem;
+    filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.193));
+}
+.header__nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style-type: none;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+}
+.header__nav ul li{
+    cursor: pointer;
+}
+.header__nav ul li a{
+    text-decoration: none;
+    color: #211b15;
+
+}
+.header__loginBtn{
+    border: 2px solid #03A9F4;
+    border-radius: 2rem;
+    padding: 1.2rem;
+}

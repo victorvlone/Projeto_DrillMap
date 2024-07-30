@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html{
+            font-size: 62.5%;
+            font-family: "Poppins", sans-serif;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.193);
+        }
+        .container{
+            width: 124rem;
+            margin: auto;
+        }
+        .section__banner{
+            width: 100%;
+            height: 90vh;
+            background-image: url(../images/Banner-LightMode.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-style: normal;
+            color: #211b15;
+        }
+        .banner__content{
+            width: 50%;
+        }
+        .banner__content h1{
+            font-size: 7rem;
+        }
+        .banner__content p{
+            font-size: 1.8rem;
+        }
+        .section{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10rem;
+            padding: 5rem;
+        }
+        .section__advantage{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10rem;
+        }
+        .section__Text h3{
+            font-size: 2.4rem;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .section__Text p{
+            font-size: 1.6rem;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .advantageContainer{
+            width: 17.7rem;
+            height: 25.9rem;
+            border: 2px solid #211b15;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 0 1rem;
+        }
+        .advantageContainer img{
+            width: 6rem;
+            filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        .containerImg{
+            background-color: #03A9F4;
+            width: fit-content;
+            padding: 1.5rem;
+            border-radius: 50%;
+            position: absolute;
+            top: -20%;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .advantageContainer h4{
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-style: normal;
+            margin-top: 6rem;
+        }
+        .advantageContainer p{
+            font-size: 1.4rem;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .section button{
+            width: 26.1rem;
+            height: 5.1rem;
+            border-radius: .9rem;
+            border: none;
+            background-color: #03A9F4;
+            font-weight: 600;
+            font-style: normal;
+            font-family: "Poppins", sans-serif;
+            color: white;
+            text-transform: uppercase;
+            margin: auto;
+            cursor: pointer;
+        }
+        .sectionTwo{
+            width: 100%;
+            height: 60vh;
+            background-image: url(../images/sectionTwo-img.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .sectionTwo__content h1{
+            text-transform: uppercase;
+            font-size: 4.8rem;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 7rem;
+        }
+        .sectionTwo__content h1 span{
+            font-size: 9.6rem;
+        }
+        .sectionTwo__content p{
+            font-size: 1.5rem;
+            width: 40%;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .sectionTwo__content button{
+            width: 14.4rem;
+            height: 4.9rem;
+            border-radius: .9rem;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-style: normal;
+            background-color: #03A9F4;
+            color: white;
+            font-size: 2rem;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
