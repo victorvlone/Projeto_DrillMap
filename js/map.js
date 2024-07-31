@@ -20,3 +20,21 @@ fetch('archives/limite_brasil_json.geojson')
     .catch(error => {
         console.error('Erro ao carregar o arquivo GeoJSON:', error);
     });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.toggle-details');
+    const itemsContainers = document.querySelectorAll('.items__container');
+
+    toggleButton.addEventListener('click', () => {
+        itemsContainers.forEach(container => {
+            container.classList.toggle('show');
+        });
+
+        if (itemsContainers[0].classList.contains('show')){
+            toggleButton.textContent = 'Ver menos';
+        } else{
+            toggleButton.textContent = 'Ver mais';
+        }
+    });
+});
