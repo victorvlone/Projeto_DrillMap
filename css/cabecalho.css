@@ -3,6 +3,9 @@
 html{
     font-size: 62.5%;
 }
+li{
+    list-style-type: none;
+}
 .containerHeader{
     width: 100%;
     display: flex;
@@ -13,6 +16,7 @@ html{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 .header{
     display: flex;
@@ -21,14 +25,94 @@ html{
 }
 .containerHeader.scrolled {
     background-color: white;
-    border-bottom: 2px solid black;
-    transition: background-color 0.3s;
+    box-shadow: 0 0 7px black;
+}
+.logoContainer{
+    background-color: white;
+    box-shadow: 0 0 7px black;
+    padding: 1rem;
+    border-radius: 24% 76% 19% 81% / 74% 24% 76% 26%;
+}
+.logoContainerNone{
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
 }
 .header__logo{
     width: 10rem;
-    filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.193));
+    border-radius: 24% 76% 19% 81% / 74% 24% 76% 26%;
 }
-.header__nav ul{
+.search-bar{
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    min-width: 50rem;
+    background-color: white;
+    box-shadow: 0 0 7px black;
+}
+.dropdown{
+    position: relative;
+    width: 28rem;
+    background-color: #03A9F4;
+    border-radius: 5rem;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.dropdown-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    padding: 1rem 1.5rem;
+}
+.dropdown-list{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    background-color: white;
+    transition: max-height .5s;
+}
+#list.show{
+    max-height: 30rem;
+}
+.dropdown-list-item{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    padding: 1rem 0 1rem 1.5rem;
+    cursor: pointer;
+    transition: margin-left .2s ease, color .2s ease;
+}
+.dropdown-list-item:hover{
+    margin-left: 0.5rem;
+    color: #03A9F4;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    width: 100%;
+    color:#211b15;
+}
+.search-box input{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #211b15;
+    border: 0;
+    outline: 0;
+}
+.search-box span{
+    cursor: pointer;
+}
+.header__nav > ul{
     display: flex;
     gap: 4rem;
     list-style-type: none;
@@ -37,10 +121,10 @@ html{
     font-weight: 700;
     font-style: normal;
 }
-.header__nav ul li{
+.header__nav ul > li{
     cursor: pointer;
 }
-.header__nav ul li a{
+.header__nav ul > li a{
     text-decoration: none;
     color: #211b15;
 

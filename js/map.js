@@ -12,7 +12,7 @@ fetch('archives/limite_brasil_json.geojson')
         L.geoJSON(data, {
             style: {
                 color: '#03A9F4',
-                weight: 2,
+                weight: 3,
                 fillOpacity: 0
             }
         }).addTo(map);

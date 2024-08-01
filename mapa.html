@@ -20,6 +20,8 @@
      
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
      <style>
 
@@ -64,7 +66,7 @@
         }
         .data__list{
             background-color: white;
-            border: 2px solid black;
+            box-shadow: 0 0 7px black;
             border-radius: 1.8rem 1.8rem 0 0;
             border-bottom: none;
             padding: 1rem;
@@ -80,13 +82,15 @@
             padding-left: 1rem;
         }
         .data__list input{
-            border: 3px solid black;
+            box-shadow: 0 0 7px black;
+            border: none;
             border-radius: 2.5rem;
             width: 13.8rem;
             height: 3rem;
             padding: 2rem;
             font-family: "Poppins", sans-serif;
             font-weight: 600;
+            outline: none;
             font-style: normal;
         }
         .data__list p{
@@ -180,10 +184,30 @@
             <a href="index.html"><img src="images/DrillMapLogoBG.png" class="header__logo"></a>
             <nav class="header__nav">
                 <ul>
-                    <li>Filtros</li>
-                    <li>
-                        <span class="material-symbols-outlined">dark_mode</span>
-                    </li>
+                    <div class="search-bar">
+                        <div class="dropdown">
+                            <div id="drop-text" class="dropdown-text">
+                                <span id="span">Bacias</span>
+                                <span id="icon" class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </div>
+                            <ul id="list" class="dropdown-list">
+                                <li class="dropdown-list-item">Bacias</li>
+                                <li class="dropdown-list-item">Blocos</li>
+                                <li class="dropdown-list-item">Campos</li>
+                                <li class="dropdown-list-item">Poços</li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Procure por Bacias...">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                    </div>
+
+                    <li>Ajuda</li>
+                    <li><span class="material-symbols-outlined">dark_mode</span></li>
                     <li class="btnRegister-popup">Cadastre-se</li>
                     <li class="header__loginBtn btnLogin-popup">Login</li>
                 </ul>
