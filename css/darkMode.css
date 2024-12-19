@@ -7,6 +7,9 @@
     background-position: center;
     color: white;    
 }
+.sectionTwo__DarkMode{
+    background-image: url(../images/carrosel2.jpg);
+}
 .container_DarkMode{
     background-color: rgba(31, 37, 51, 1);
     border: none;

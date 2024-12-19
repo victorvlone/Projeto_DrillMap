@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/cabecalho.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/darkMode.css">
+    <link rel="stylesheet" href="css/darkMode.css" />
 
     <link
       rel="stylesheet"
@@ -17,175 +17,292 @@
   </head>
 
   <body>
-    <div class="containerHeader">
-        <header class="header container">
-          <div class="logoContainer">
-            <a href="index.html"
-                ><img src="images/DrillMapLogoBG.png" class="header__logo"
-            /></a>
-          </div>
+    <div class="container-mobile">
+      <header class="header">
+        <img class="header-img logo" src="images/DrillMapLogoBG.png" alt="" />
+        <ul>
+          <li>
+            <a href="mapa.html"><span class="material-symbols-outlined"> travel_explore </span></a>
+          </li>
+          <li class="darkModeToggle"><span class="material-symbols-outlined icon"> dark_mode </span></li>
+          <li><span class="material-symbols-outlined"> login </span></li>
+        </ul>
+      </header>
 
-        <nav class="header__nav">
-            <ul>
-            <li><a href="mapa.html">Mapa</a></li>
-            <li id="darkModeToggle">
-                <span class="material-symbols-outlined">dark_mode</span>
-            </li>
-            <li class="btnRegister-popup">Cadastre-se</li>
-            <li class="header__loginBtn btnLogin-popup">Login</li>
-            </ul>
-        </nav>
-        </header>
+      <div class="Container-SectionOne">
+        <section class="sectionOne-mobile">
+          <h1>Bem-vindo ao DrillMap.</h1>
+          <p>
+            Acesse o mapa sem cadastro ou cadastre-se para receber beneficios
+            limitados.
+          </p>
+  
+          <div class="sectionOne-mobile-list banner__content">
+            <div class="sectionOne-mobile-listItem">
+              <span class="material-symbols-outlined">notifications_active</span>
+              <div class="sectionOne-mobile-listText">
+                <h3>NOTIFICAÇÃO</h3>
+                <p>
+                  Receba notificações automáticas sobre atualizações nos seus
+                  poços favoritos.
+                </p>
+              </div>
+            </div>
+            <div class="sectionOne-mobile-listItem">
+              <span class="material-symbols-outlined">bookmark</span>
+              <div class="sectionOne-mobile-listText">
+                <h3>FAVORITO</h3>
+                <p>
+                  Após realizar o cadastro, você pode favoritar os poços de
+                  interesse.
+                </p>
+              </div>
+            </div>
+            <div class="sectionOne-mobile-listItem">
+              <span class="material-symbols-outlined">article</span>
+              <div class="sectionOne-mobile-listText">
+                <h3>DETALHES</h3>
+                <p>
+                  Acesse nossa plataforma para explorar detalhes sobre cada poço.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button>CADASTRE-SE</button>
+        </section>
+      </div>
+
+      <div class="Container-SectionTwo">
+        <section class="sectionTwo-mobile">
+          <h4>planos</h4>
+          <ul>
+            <li>Acesso ao mapa por tempo ilimitado</li>
+            <li>Dados sempre atualizados</li>
+          </ul>
+          <div class="sectionTwo-mobile-planos mensal">
+            <p><span>r$xx,</span>xx</p>
+            <h5>assinar</h5>
+          </div>
+          <h3>recomendado</h3>
+          <div class="sectionTwo-mobile-planos anual">
+            <p>
+              <span>r$xxx,</span>xx</p>
+            <h5>assinar</h5>
+          </div>
+        </section>
+      </div>
     </div>
 
-    <div class="wrapper">
-      <span class="icon-close">
-        <ion-icon name="close-outline"></ion-icon>
-      </span>
-      <div class="form-box login">
-        <h2>Login</h2>
-        <form action="#">
-          <div class="input-box">
-            <span class="icon"></span>
-            <input type="email" required />
-            <label>Email</label>
-          </div>
-          <div class="input-box">
-            <span class="icon"></span>
-            <input type="password" required />
-            <label>Senha</label>
-          </div>
-          <div class="remember-forgot">
-            <label><input type="checkbox" />Lembrar de mim</label>
-            <a href="#">Esqueceu a senha?</a>
-          </div>
-          <button type="submit" class="btn">Login</button>
-          <div class="login-register">
+    <div class="container-1024">
+      <div class="containerHeader">
+        <header class="header container">
+          <a href="index.html"
+            ><img
+              src="images/DrillMapLogoBG.png"
+              class="header-logo logo"
+          /></a>
+
+          <nav class="header-nav">
+            <ul>
+              <li><a href="mapa.html">Mapa</a></li>
+              <li class="darkModeToggle">
+                <span class="material-symbols-outlined icon"
+                  >dark_mode</span
+                >
+              </li>
+              <li class="btnRegister-popup">Cadastre-se</li>
+              <li class="header__loginBtn btnLogin-popup">Login</li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <div class="wrapper">
+        <span class="icon-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"></span>
+              <input type="password" required />
+              <label>Senha</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" />Lembrar de mim</label>
+              <a href="#">Esqueceu a senha?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>
+                Não tem uma conta?
+                <a href="#" class="register-link">Cadastre-se</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Cadastro</h2>
+          <form action="#">
+            <div class="nome">
+              <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required />
+                <label>Nome</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required />
+                <label>Sobrenome</label>
+              </div>
+            </div>
+            <div class="input-box">
+              <span class="icon"></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"></span>
+              <input type="password" required />
+              <label>Senha</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"></span>
+              <input type="password" required />
+              <label>Confirme a senha</label>
+            </div>
+            <div class="remember-forgot">
+              <label
+                ><input type="checkbox" />Quero receber e-mails sobre
+                atualizações</label
+              >
+            </div>
+            <button type="submit" class="btn">Cadastrar</button>
+            <div class="login-register">
+              <p>Já tem uma conta? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="section__banner">
+        <section class="banner__content container">
+          <h1>Bem-vindo ao DrillMap.</h1>
+          <p>
+            Explore mapas interativos de bacias sedimentares, poços, campos e
+            blocos exploratórios com o DrillMap. Utilize nossos filtros
+            intuitivos para visualizar áreas específicas e obter informações
+            detalhadas sobre cada local. Navegue facilmente entre diferentes
+            camadas geográficas e descubra os recursos energéticos com precisão.
+          </p>
+        </section>
+      </div>
+
+      <section class="section container">
+        <div class="section__Text">
+          <h3>Faça parte da nossa comunidade e mantenha-se sempre informado</h3>
+          <p>
+            Nossa plataforma garante que você esteja sempre um passo à frente,
+            com acesso a ferramentas avançadas e um suporte contínuo. Não perca
+            a oportunidade de fazer parte de uma rede que valoriza o
+            conhecimento e a atualização constante.
+          </p>
+        </div>
+        <div class="section__advantage">
+          <div class="advantageContainer">
+            <div class="containerImg">
+              <img
+                src="images/notifications_active_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                alt=""
+              />
+            </div>
+            <h4>notificação</h4>
             <p>
-              Não tem uma conta?
-              <a href="#" class="register-link">Cadastre-se</a>
+              Receba notificações automáticas sempre que um poço que você
+              favoritou for atualizado.
             </p>
           </div>
-        </form>
-      </div>
-
-      <div class="form-box register">
-        <h2>Cadastro</h2>
-        <form action="#">
-          <div class="nome">
-            <div class="input-box">
-              <span class="icon"></span>
-              <input type="text" required />
-              <label>Nome</label>
+          <div class="advantageContainer">
+            <div class="containerImg">
+              <img src="images/icon-Bookmark.png" alt="" />
             </div>
-            <div class="input-box">
-              <span class="icon"></span>
-              <input type="text" required />
-              <label>Sobrenome</label>
+            <h4>favorito</h4>
+            <p>
+              Após realizar o cadastro, você pode favoritar os poços de
+              interesse.
+            </p>
+          </div>
+          <div class="advantageContainer">
+            <div class="containerImg">
+              <img src="images/Icon-details.png" alt="" />
+            </div>
+            <h4>detalhes</h4>
+            <p>
+              Você tem acesso a uma plataforma que permite explorar informações
+              detalhadas sobre cada poço.
+            </p>
+          </div>
+        </div>
+        <button class="section__btn">cadastre-se</button>
+      </section>
+
+      <section class="sectionTwo">
+        <div class="container sectionTwo__content">
+          <h1>
+            utilização <br />
+            do <span>mapa</span>
+          </h1>
+          <p>
+            Explore nosso mapa interativo para acessar dados de poços e bacias
+            petrolíferas sem cadastro, utilizando filtros para refinar sua
+            busca.
+          </p>
+          <button><a href="mapa.html">mapa</a></button>
+        </div>
+      </section>
+
+      <section class="sectionThree container">
+        <div class="sectionThree-description">
+          <h3>planos</h3>
+          <ul>
+            <li>Acesso ao mapa por tempo ilimitado</li>
+            <li>Dados sempre atualizados</li>
+          </ul>
+        </div>
+        <div class="sectionThree-planos">
+          <div class="sectionThree-planos-plano mensal">
+            <div class="sectionThree-planos-h3">
+              <h3>mensal</h3>
+              <hr />
+            </div>
+            <h1>R$<span>XX,</span>XX</h1>
+            <div class="sectionThree-planos-button">
+              <hr />
+              <button>assinar</button>
             </div>
           </div>
-          <div class="input-box">
-            <span class="icon"></span>
-            <input type="email" required />
-            <label>Email</label>
+          <div class="sectionThree-planos-plano anual">
+            <div class="sectionThree-planos-h3">
+              <h4>recomendado</h4>
+              <h3>anual</h3>
+              <hr />
+            </div>
+            <h1>R$<span>XXX,</span>XX</h1>
+            <div class="sectionThree-planos-button">
+              <hr />
+              <button>assinar</button>
+            </div>
           </div>
-          <div class="input-box">
-            <span class="icon"></span>
-            <input type="password" required />
-            <label>Senha</label>
-          </div>
-          <div class="input-box">
-            <span class="icon"></span>
-            <input type="password" required />
-            <label>Confirme a senha</label>
-          </div>
-          <div class="remember-forgot">
-            <label
-              ><input type="checkbox" />Quero receber e-mails sobre
-              atualizações</label
-            >
-          </div>
-          <button type="submit" class="btn">Cadastrar</button>
-          <div class="login-register">
-            <p>Já tem uma conta? <a href="#" class="login-link">Login</a></p>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="section__banner">
-      <section class="banner__content container">
-        <h1>Bem-vindo ao DrillMap.</h1>
-        <p>
-          Explore mapas interativos de bacias sedimentares, poços, campos e
-          blocos exploratórios com o DrillMap. Utilize nossos filtros intuitivos
-          para visualizar áreas específicas e obter informações detalhadas sobre
-          cada local. Navegue facilmente entre diferentes camadas geográficas e
-          descubra os recursos energéticos com precisão.
-        </p>
+        </div>
       </section>
     </div>
-
-    <section class="section container">
-      <div class="section__Text">
-        <h3>Faça parte da nossa comunidade e mantenha-se sempre informado</h3>
-        <p>
-          Nossa plataforma garante que você esteja sempre um passo à frente, com
-          acesso a ferramentas avançadas e um suporte contínuo. Não perca a
-          oportunidade de fazer parte de uma rede que valoriza o conhecimento e
-          a atualização constante.
-        </p>
-      </div>
-      <div class="section__advantage">
-        <div class="advantageContainer">
-          <div class="containerImg">
-            <img
-              src="images/notifications_active_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
-              alt=""
-            />
-          </div>
-          <h4>notificação</h4>
-          <p>
-            Receba notificações automáticas sempre que um poço que você
-            favoritou for atualizado.
-          </p>
-        </div>
-        <div class="advantageContainer">
-          <div class="containerImg">
-            <img src="images/icon-Bookmark.png" alt="" />
-          </div>
-          <h4>favorito</h4>
-          <p>
-            Após realizar o cadastro, você pode favoritar os poços de interesse.
-          </p>
-        </div>
-        <div class="advantageContainer">
-          <div class="containerImg">
-            <img src="images/Icon-details.png" alt="" />
-          </div>
-          <h4>detalhes</h4>
-          <p>
-            Você tem acesso a uma plataforma que permite explorar informações
-            detalhadas sobre cada poço.
-          </p>
-        </div>
-      </div>
-      <button class="section__btn">cadastre-se</button>
-    </section>
-
-    <section class="sectionTwo">
-      <div class="container sectionTwo__content">
-        <h1>
-          utilização <br />
-          do <span>mapa</span>
-        </h1>
-        <p>
-          Explore nosso mapa interativo para acessar dados de poços e bacias
-          petrolíferas sem cadastro, utilizando filtros para refinar sua busca.
-        </p>
-        <button>mapa</button>
-      </div>
-    </section>
 
     <script src="js/login.js"></script>
     <script src="js/cabecalho.js"></script>

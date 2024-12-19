@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const cabecalho = document.querySelector('.containerHeader');
     const searchBar = document.querySelector('.search-bar');
     const logoContainer = document.querySelector('.logoContainer');
-
+    
     window.addEventListener('scroll', function(){
         if(window.scrollY > 50){
             cabecalho.classList.add('scrolled');
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
 let dropdownBtn = document.getElementById("drop-text");
 let list = document.getElementById("list");
-let icon = document.getElementById("icon");
+let icon = document.getElementById("iconOptions");
 let span = document.getElementById("span");
-let input = document.getElementById("search-input");
+let input = document.querySelectorAll(".search-input");
 let listItems = document.querySelectorAll(".dropdown-list-item");
 
 dropdownBtn.onclick = function(){
